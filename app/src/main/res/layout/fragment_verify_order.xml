@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    tools:context=".Fragment.Order.VerifyOrderFragment">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.7"
+        android:background="@color/black"></FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/container_verify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:background="@drawable/white_radius_box"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/otp_back_icon" />
+
+                <vn.kido.ship.IControl.ITextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/confirm_order"
+                    android:textAllCaps="true"
+                    android:textColor="@color/main"
+                    android:textSize="16sp"
+                    app:fontName="BRYANTLG_BOLD" />
+
+            </FrameLayout>
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <vn.kido.ship.IControl.ITextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:padding="8dp"
+                        android:text="@string/text_input_code_confirm"
+                        android:textColor="@color/gray_700"
+                        android:textSize="14sp"
+                        app:fontName="BRYANTLG_BOLD" />
+
+                    <vn.kido.ship.IControl.IEdittext
+                        android:id="@+id/edt_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/background"
+                        android:gravity="center"
+                        android:hint="@string/code_confirm"
+                        android:inputType="phone"
+                        android:padding="8dp"
+                        android:textColor="@color/main"
+                        android:textColorHint="@color/gray_600"
+                        android:textSize="14sp"
+                        app:fontName="BRYANTLG_NORMAL" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center"
+                        android:background="@color/gray_600" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <vn.kido.ship.IControl.IEdittext
+                            android:id="@+id/edt_note"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginBottom="12dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/gray_box"
+                            android:ellipsize="end"
+                            android:gravity="left"
+                            android:hint="@string/addnote"
+                            android:padding="4dp"
+                            android:scaleType="fitCenter"
+                            android:textColor="@color/gray_700"
+                            android:textSize="13sp"
+                            app:fontName="BRYANTLG_NORMAL" />
+
+                        <ImageView
+                            android:id="@+id/iv_verify_photo"
+                            android:layout_width="0dp"
+                            android:layout_height="120dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="8dp"
+                            android:layout_weight="0.5"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/take_picture" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lnnote"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imv_note"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/finish"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/imv_nonote"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/waiting" />
+
+                        <vn.kido.ship.IControl.ITextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:gravity="center"
+                            android:maxLines="2"
+                            android:text="@string/note_order"
+                            android:textColor="@color/gray_700"
+                            android:textSize="14sp"
+                            app:fontName="BRYANTLG_BOLD" />
+                    </LinearLayout>
+
+
+                    <vn.kido.ship.IControl.ITextView
+                        android:id="@+id/txt_messnotify"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:text="@string/messagenotify"
+                        android:textColor="@color/main"
+                        android:textSize="14sp"
+                        android:visibility="gone"
+                        app:fontName="BRYANTLG_BOLD" />
+
+                    <vn.kido.ship.IControl.IButton
+                        android:id="@+id/btn_next"
+                        android:layout_width="160dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/background_program"
+                        android:paddingLeft="40dp"
+                        android:paddingRight="40dp"
+                        android:text="@string/finished"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        app:fontName="BRYANTLG_BOLD" />
+                </LinearLayout>
+            </android.support.v4.widget.NestedScrollView>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <include layout="@layout/progress" />
+
+</FrameLayout>

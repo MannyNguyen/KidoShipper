@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Fragment.Oauth.LoginFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="140dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/kd_logo"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.2"
+            android:gravity="top"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="48dp"
+                android:paddingRight="48dp">
+
+                <vn.kido.ship.IControl.ITextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:gravity="center"
+                    android:text="Vui lòng nhập thông tin đăng nhập"
+                    android:textColor="@color/main"
+                    android:textSize="14sp"
+                    app:fontName="BRYANTLG_NORMAL" />
+
+                <vn.kido.ship.IControl.IEdittext
+                    android:id="@+id/edt_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/background"
+                    android:gravity="center"
+                    android:hint="Số điện thoại đăng nhập"
+                    android:inputType="phone"
+                    android:padding="8dp"
+                    android:textColor="@color/main"
+                    android:textColorHint="@color/main"
+                    android:textSize="14sp"
+                    app:fontName="BRYANTLG_NORMAL" />
+
+                <View
+                    android:layout_width="200dp"
+                    android:layout_height="1dp"
+                    android:background="@color/main"></View>
+
+                <vn.kido.ship.IControl.IButton
+                    android:id="@+id/btn_signin"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/red_border_box_null_background"
+                    android:gravity="center"
+                    android:text="Đăng nhập"
+                    android:textAllCaps="true"
+                    android:textColor="@color/main"
+                    android:textSize="16sp"
+                    app:fontName="BRYANTLG_BOLD" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <include layout="@layout/progress" />
+</FrameLayout>

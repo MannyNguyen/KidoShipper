@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="67dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    android:background="@drawable/red_attribute"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="4dp">
+
+
+        <vn.kido.ship.IControl.ITextView
+            android:id="@+id/valueattribute"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textColor="@color/gray_900"
+            app:fontName="BRYANTLG_BOLD" />
+
+        <vn.kido.ship.IControl.ITextView
+            android:id="@+id/nameattribute"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/gray_700"
+            android:textSize="12sp"
+            app:fontName="BRYANTLG_NORMAL" />
+
+</LinearLayout>

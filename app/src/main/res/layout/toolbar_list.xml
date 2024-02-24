@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <include layout="@layout/back" />
+
+        <vn.kido.ship.IControl.ITextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:textColor="@color/main"
+            android:textSize="14sp"
+            app:fontName="BRYANTLG_BOLD" />
+
+        <ImageButton
+            android:id="@+id/ic_support"
+            android:layout_width="44dp"
+            android:layout_height="match_parent"
+            android:background="@color/background"
+            android:clickable="false"
+            android:foreground="?android:selectableItemBackground"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/phan_hoi_cham_soc_menu" />
+
+        <ImageButton
+            android:id="@+id/ic_list"
+            android:layout_width="44dp"
+            android:layout_height="match_parent"
+            android:background="@color/background"
+            android:clickable="false"
+            android:foreground="?android:selectableItemBackground"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_list" />
+
+    </LinearLayout>
+
+</android.support.design.widget.AppBarLayout>

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vn.kido.ship.IControl.ICardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="4dp"
+    android:foreground="?android:selectableItemBackground"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                android:orientation="vertical">
+
+                <vn.kido.ship.IControl.ITextView
+                    android:id="@+id/namegift"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:textColor="@color/gray_900"
+                    android:textSize="14sp"
+                    app:fontName="BRYANTLG_BOLD" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <vn.kido.ship.IControl.ITextView
+                            android:id="@+id/price_gift"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:ellipsize="end"
+                            android:gravity="left"
+                            android:maxLines="1"
+                            android:text="0"
+                            android:textColor="@color/main"
+                            android:textSize="14dp"
+                            app:fontName="BRYANTLG_BOLD" />
+
+                        <vn.kido.ship.IControl.ITextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.1"
+                            android:gravity="center"
+                            android:text="/"
+                            android:textColor="@color/gray_700"
+                            android:textSize="14dp"
+                            app:fontName="BRYANTLG_BOLD" />
+
+                        <vn.kido.ship.IControl.ITextView
+                            android:id="@+id/minunit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.5"
+                            android:ellipsize="end"
+                            android:gravity="left"
+                            android:maxLines="1"
+                            android:text="Chai"
+                            android:textColor="@color/gray_700"
+                            android:textSize="12dp"
+                            app:fontName="BRYANTLG_BOLD" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <vn.kido.ship.IControl.ITextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:ellipsize="end"
+                            android:gravity="left"
+                            android:maxLines="1"
+                            android:text="Tối đa"
+                            android:textColor="@color/gray_700"
+                            android:textSize="14dp"
+                            app:fontName="BRYANTLG_BOLD" />
+
+                        <vn.kido.ship.IControl.ITextView
+                            android:id="@+id/max_unit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.1"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="@color/gray_900"
+                            android:textSize="14dp"
+                            app:fontName="BRYANTLG_BOLD" />
+
+                        <vn.kido.ship.IControl.ITextView
+                            android:id="@+id/unit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.5"
+                            android:ellipsize="end"
+                            android:gravity="left"
+                            android:maxLines="1"
+                            android:text="Chai"
+                            android:textColor="@color/gray_700"
+                            android:textSize="14dp"
+                            app:fontName="BRYANTLG_BOLD" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+
+                <LinearLayout
+                    android:id="@+id/ln_requantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/background_btn"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <vn.kido.ship.IControl.ITextView
+                        android:id="@+id/unit_gift"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Chai"
+                        app:fontName="BRYANTLG_BOLD" />
+
+                    <vn.kido.ship.IControl.ITextView
+                        android:id="@+id/unit_gift_quantity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/gray_900"
+                        app:fontName="BRYANTLG_BOLD" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background_neworder"
+            android:orientation="horizontal">
+
+            <vn.kido.ship.IControl.ITextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.5"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:maxLines="1"
+                android:text="@string/money"
+                android:textColor="@color/gray_700"
+                android:textSize="14dp"
+                app:fontName="BRYANTLG_BOLD" />
+
+            <vn.kido.ship.IControl.ITextView
+                android:id="@+id/money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.5"
+                android:ellipsize="end"
+                android:gravity="right"
+                android:maxLines="1"
+                android:text="0"
+                android:textColor="@color/main"
+                android:textSize="14dp"
+                app:fontName="BRYANTLG_BOLD" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</vn.kido.ship.IControl.ICardView>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vn.kido.ship.IControl.ITextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@android:id/text1"
+    style="?android:attr/spinnerItemStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp"
+    android:singleLine="true"
+    android:text="fdsfds"
+    android:textColor="@color/gray_900"
+    android:textSize="14sp"
+    app:fontName="BRYANTLG_BOLD" />

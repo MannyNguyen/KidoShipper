@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="8dp"
+    android:foreground="?android:selectableItemBackground"
+    app:cardBackgroundColor="@color/white"
+
+    app:cardCornerRadius="4dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+   <!--     <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_gift_outer_active" />
+
+            <vn.nip.kidoshipper.IControl.ITextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="@string/gift"
+                android:textColor="@color/gray_900"
+                android:textSize="14sp"
+                app:fontName="BRYANTLG_BOLD" />
+        </LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:padding="4dp">
+
+                <ImageView
+                    android:id="@+id/thumbnail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerInside" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:layout_marginLeft="4dp"
+                android:orientation="vertical">
+
+                <!--        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="invisible"
+                            android:orientation="horizontal">
+
+                            <vn.nip.kidoshipper.IControl.ITextView
+                                android:id="@+id/name"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:ellipsize="end"
+                                android:text="test"
+                                android:maxLines="1"
+                                android:textColor="@color/gray_900"
+                                android:textSize="14sp"
+                                app:fontName="BRYANTLG_BOLD" />
+
+                            <vn.nip.kidoshipper.IControl.ITextView
+                                android:id="@+id/number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:textColor="@color/gray_900"
+                                android:textSize="14sp"
+                                app:fontName="BRYANTLG_BOLD" />
+
+                        </LinearLayout>-->
+
+                <vn.kido.ship.IControl.ITextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:text="test"
+                    android:maxLines="1"
+                    android:textColor="@color/gray_900"
+                    android:textSize="14sp"
+                    app:fontName="BRYANTLG_BOLD" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center">
+                    <vn.kido.ship.IControl.ITextView
+                        android:id="@+id/unit1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="8dp"
+                        android:textColor="@color/gray_900"
+                        app:fontName="BRYANTLG_BOLD" />
+
+                    <vn.kido.ship.IControl.ITextView
+                        android:id="@+id/txv1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textSize="12sp"
+                        android:textColor="@color/gray_700"
+                        app:fontName="BRYANTLG_NORMAL" />
+
+                    <vn.kido.ship.IControl.ITextView
+                        android:id="@+id/unit2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="8dp"
+                        android:textColor="@color/gray_900"
+                        app:fontName="BRYANTLG_BOLD" />
+
+                    <vn.kido.ship.IControl.ITextView
+                        android:id="@+id/txv2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textSize="12sp"
+                        android:textColor="@color/gray_700"
+                        app:fontName="BRYANTLG_NORMAL" />
+
+                    <vn.kido.ship.IControl.ITextView
+                        android:id="@+id/unit3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="8dp"
+                        android:textColor="@color/gray_900"
+                        app:fontName="BRYANTLG_BOLD" />
+
+                    <vn.kido.ship.IControl.ITextView
+                        android:id="@+id/txv3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textSize="12sp"
+                        android:textColor="@color/gray_700"
+                        app:fontName="BRYANTLG_NORMAL" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</android.support.v7.widget.CardView>

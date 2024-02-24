@@ -1,0 +1,113 @@
+<resources>
+    <string name="app_name">KIDO Shipper</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="bring_product">Giao hàng</string>
+
+    <!--Detail Order-->
+    <string name="info_sender">Thông tin người gửi</string>
+    <string name="nameshop">Tên cửa hàng</string>
+    <string name="phone">Số điện thoại</string>
+    <string name="address">Địa chỉ</string>
+    <string name="total">Tổng thanh toán</string>
+    <string name="callsupport">Gọi hỗ trợ</string>
+    <string name="finished">Kết thúc</string>
+    <string name="notice">Ghi chú</string>
+    <string name="road">Lộ trình</string>
+    <!--OTP-->
+    <string name="support">Phản hồi và chăm sóc</string>
+    <string name="confirm_sms">Xác nhận SMS</string>
+    <string name="text_code_order">Mã xác nhận đã được gửi đi tới số điện thoại đăng ký</string>
+    <string name="code_confirm">Mã xác nhận</string>
+    <string name="send_again">Gửi lại</string>
+    <string name="pleaseinputcode">Vui lòng điền mã xác nhận vào dòng bên dưới</string>
+    <string name="no_receive_code">Không nhận được mã xác nhận</string>
+    <!---->
+    <!--Notify-->
+    <string name="cancel">Hủy</string>
+    <string name="confirm">Đồng ý</string>
+    <string name="notify">Thông báo</string>
+    <string name="message">Mess</string>
+    <!--Detail Order-->
+    <string name="receive">Nhận hàng</string>
+    <string name="received">Đã giao</string>
+    <string name="sort">Sắp xếp theo</string>
+    <string name="code_order">Mã đơn hàng</string>
+    <string name="caution">Ghi chú</string>
+    <string name="text_caution">Giao hàng trong giờ hành chính từ 9h đến 17h</string>
+    <string name="ordernew">Đơn hàng</string>
+    <string name="delivering">Đang giao</string>
+    <string name="delivered">Đã giao</string>
+    <string name="detailorder">Chi tiết đơn hàng</string>
+    <string name="dictrist">Quận</string>
+    <string name="start">Bắt đầu</string>
+    <string name="time">Thời gian</string>
+    <string name="distance">Khoảng cách</string>
+    <string name="vnd">vnđ</string>
+    <string name="product">sản phẩm</string>
+    <string name="quantity">Số lượng</string>
+    <string name="quantityorder">Số lượng đặt</string>
+    <string name="delivery_date">Dự kiến giao ngày</string>
+    <string name="show_detail">Xem chi tiết</string>
+    <string name="datedelivered">Đã giao ngày</string>
+    <string name="namereceived">Tên người nhận</string>
+    <!---->
+    <string name="listshop">Danh sách cửa hàng</string>
+    <string name="listorder">Danh sách đơn hàng</string>
+    <string name="shop">Cửa hàng</string>
+    <string name="phone_support">02871060708</string>
+    <!---->
+    <string name="addnote">Thêm ghi chú</string>
+    <string name="next">Tiếp theo</string>
+    <string name="input_text">Nhập nhận xét ghi chú vào thanh bên dưới</string>
+    <string name="confirm_order">Xác nhận đơn hàng</string>
+    <string name="text_input_code_confirm">Nhập mã xác nhận và chụp ảnh để hoàn tất đơn hàng.</string>
+    <!--ReQuantity-->
+    <string name="unit">(Thùng 12 sản phẩm)</string>
+    <string name="ok">Xác nhận</string>
+    <string name="quantityproduct">Số lượng</string>
+    <string name="changequantity">Thay đổi số lượng sản phẩm thực nhận.</string>
+    <string name="this_give_not_sales">Hàng tặng không bán</string>
+    <string name="gift">Hàng tặng</string>
+    <string name="real_received">Thực nhận</string>
+    <string name="total_money">Tổng tiền</string>
+    <string name="total_money_order">Tổng tiền đặt</string>
+    <string name="discount">Sau chiết khấu </string>
+    <string name="program">Chương trình</string>
+    <string name="change">Đổi trả</string>
+    <string name="confirm_change">Xác nhận</string>
+    <string name="change_order">Trả đơn</string>
+    <string name="click_choose">NHấp vào ô để chọn nguyên nhân trả đơn</string>
+    <string name="note_order">Đơn hàng cần chú ý</string>
+    <string name="total_real">Tổng thực nhận</string>
+    <string name="note">Chú ý</string>
+    <string name="totaladd">Tổng cộng</string>
+    <string name="sale">KM theo sản phẩm</string>
+    <string name="saleorder">KM đơn hàng</string>
+    <string name="update">Thông báo update</string>
+    <string name="mess">Thông báo</string>
+    <string name="cancle_order">Hủy đơn</string>
+    <string name="textupdate">Vui lòng cập nhật phiên bản mới để trải nghiệm toàn bộ tính năng của KIDO SHIP</string>
+    <!--fragment exchange-->
+    <string name="reason">Lý do:</string>
+    <string name="cancelled">Đã hủy</string>
+    <string name="completed">Hoàn tất</string>
+    <string name="changeodd">Đổi hàng</string>
+    <string name="returnodd">Trả hàng</string>
+    <string name="intact">Trả đơn hàng</string>
+    <string name="txtinfoorder">Hiện tại chưa có đơn hàng nào</string>
+    <string name="history">Lịch sử đơn hàng</string>
+    <string name="messagenotify">Thiếu hình hoặc mã xác nhận</string>
+
+    <string name="google_map_key">AIzaSyAfiotVN8sVh9f471Q0SwpYhCHFcuvXS7Q</string>
+    <string name="confirm_dialog">Xin quyền GPS</string>
+    <!--fragment KMDQ-->
+    <string name="remain_KM">KM còn lại</string>
+    <string name="money_KM">Tiền KM</string>
+    <string name="difference_can">Chênh lệch cho phép</string>
+    <string name="money">Thành tiền:</string>
+    <string name="number">số lượng</string>
+
+</resources>
